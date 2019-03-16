@@ -21,7 +21,7 @@ namespace SmartHotel.Clients.Core
 
         // Endpoints
         const string defaultImagesBaseUri = "https://sh360imgdev.blob.core.windows.net";
-        const string defaultRoomDevicesEndpoint = "http://13.66.132.178:2000/api";
+        const string defaultRoomDevicesEndpoint = "http://13.77.150.201:2000/api";
 
         // Maps
         const string defaultBingMapsApiKey = "AkSuJ-YtW4VDvIzErxK3ke2ILQD1muWwS2KN2QvhqHobx4YBEIYqkEVBLyx1LYby";
@@ -40,7 +40,7 @@ namespace SmartHotel.Clients.Core
         const bool defaultHasBooking = false;
 
 		// Room Devices
-	    const string defaultRoomId = "4dfa6bc0-8a78-4f9b-97ce-6414ff723ff8";
+	    const string defaultRoomId = "ab847902-3ec4-4888-8ca8-0752796c89e4";
 
         // Fakes
         const bool defaultUseFakes = false;
