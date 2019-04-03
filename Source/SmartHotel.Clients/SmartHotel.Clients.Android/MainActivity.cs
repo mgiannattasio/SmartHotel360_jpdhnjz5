@@ -35,6 +35,8 @@ namespace SmartHotel.Clients.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            AppCenter.Start("ace33b12-1f7e-4bf6-933d-49b65acf4ffe", typeof(Analytics), typeof(Crashes));
+
             base.OnCreate(bundle);
 
             Forms.Init(this, bundle);
@@ -54,8 +56,7 @@ namespace SmartHotel.Clients.Droid
 
             MakeStatusBarTranslucent(false);
             InitNFCService();
-
-            AppCenter.Start("ace33b12-1f7e-4bf6-933d-49b65acf4ffe", typeof(Analytics), typeof(Crashes));
+            
         }
 
         void InitNFCService()
