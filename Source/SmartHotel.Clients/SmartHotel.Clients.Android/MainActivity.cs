@@ -5,6 +5,9 @@ using Android.OS;
 using Android.Util;
 using Android.Views;
 using CarouselView.FormsPlugin.Android;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Microsoft.Identity.Client;
 using Rg.Plugins.Popup;
 using Rg.Plugins.Popup.Services;
@@ -51,6 +54,8 @@ namespace SmartHotel.Clients.Droid
 
             MakeStatusBarTranslucent(false);
             InitNFCService();
+
+            AppCenter.Start("ace33b12-1f7e-4bf6-933d-49b65acf4ffe", typeof(Analytics), typeof(Crashes));
         }
 
         void InitNFCService()
